@@ -27,5 +27,10 @@ except ImportError:
     pass
 
 setuptools.setup(name = "python-vnfsvcclient", version="2015.1.0",
-                 packages=find_packages())
-
+                 packages=find_packages(),
+                 entry_points={
+                     'console_scripts': [
+                         'vnfsvc=vnfsvcclient.shell:main',
+                     ]
+                 }
+)
