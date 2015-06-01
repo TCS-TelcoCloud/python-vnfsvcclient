@@ -40,7 +40,7 @@ from vnfsvcclient.common import exceptions as exc
 from vnfsvcclient.common import utils
 from vnfsvcclient.openstack.common.gettextutils import _
 from vnfsvcclient.openstack.common import strutils
-from vnfsvcclient.version import __version__
+from vnfsvcclient.version import version_info
 from vnfsvcclient.vnfsvc.v1_0 import service
 
 
@@ -162,7 +162,7 @@ class VNFSvcShell(app.App):
         parser.add_argument(
             '--version',
             action='version',
-            version=__version__, )
+            version=version_info,)
         parser.add_argument(
             '-v', '--verbose', '--debug',
             action='count',

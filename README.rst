@@ -7,7 +7,7 @@ Python bindings to the Vnfsvc API
   To install::
 
     $ git clone https://github.com/TCS-TelcoCloud/OpenVNFManager.git
-    $ python setup.py install_lib install_egg_info
+    $ python setup.py install
 
 Command-line API
 -----------------
